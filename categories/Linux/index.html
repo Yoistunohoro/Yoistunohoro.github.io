@@ -24,7 +24,7 @@
           content: ' ';
           position: fixed;
           top: 0;
-          background: url('/img/66385385_p0 (2).png') center 0 no-repeat;
+          background: url('/img/66385385_p0.png') center 0 no-repeat;
           right: 0;
           bottom: 0;
           left: 0;
@@ -65,24 +65,25 @@
 	
 </head>
     
-		
-<!-- Layouts -->
-
-
-
-<!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css" />
-<link rel="stylesheet" href="/css/typo.css" />
-<!-- 文章页 -->
-<body class="is-loading">
+		<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
+    <div id="wrapper" class="fade-in overlay">
         <!-- Intro 头部显示 s -->
+                <div id="intro">
+            <h1>This is<br />
+                        XRFun </h1>
+            <p> Welcome to my technical learning Blog<br/>欢迎来到我的个人技术学习博客
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">XRFun</a>
 </header>
+        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special" >
             <ul class="menu links" >
@@ -96,7 +97,7 @@
 	            <a href="#s1">分类</a>
 	                    <ul class="submenu">
 	                        <li>
-	                        <a class="category-link" href="/categories/C-C/">C/C++</a></li><li><a class="category-link" href="/categories/Mathematica/">Mathematica</a></li><li><a class="category-link" href="/categories/Opencv/">Opencv</a>
+	                        <a class="category-link" href="/categories/C-C/">C/C++</a></li><li><a class="category-link" href="/categories/Linux/">Linux</a></li><li><a class="category-link" href="/categories/Mathematica/">Mathematica</a></li><li><a class="category-link" href="/categories/Opencv/">Opencv</a>
 	                    </ul>
 	        </li>
 	        
@@ -138,45 +139,55 @@
 			</ul>
 </nav>
 
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        
+        <!-- 文章列表   s -->
+        <div id="main" style="background-color: transparent; padding:0;">
+        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
+            <div class="link_row">
+                <!-- 文章sample  s-->
 
-        <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(http://s1.51cto.com/wyfs02/M01/46/44/wKioL1PxYLqDts5dAABFTMaVr58565.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >C/C++学习笔记</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h3 id="C-中的Vector"><a href="#C-中的Vector" class="headerlink" title="C++中的Vector"></a>C++中的Vector</h3><p>定义: vector(向量): C++中的一种数据结构,确切的说是一个类.它相当于一个动态的数组,当程序员无法知道自己需要的数组的规模多大时,用其来解决问题可以达到最大节约空间的目的.<br>例子: <strong>vector &lt; int> a;</strong> 相当于声明了一个 <strong>int</strong> 数组 <strong>a[]</strong>,大小未定,可动态的向其中添加,如 <strong>vector &lt; int, n> a;</strong>  <strong>n</strong> 可为任意值.或者可以使用 <strong>vector &lt; int > a(n)</strong> 这种方法来定义大小.<br>扩展: 二维数组的定义 <strong>vector &lt; int * > a</strong></p>
-
-            </div>
-
-            <!-- Post Comments -->
+                
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2018/11/05/Linux/">
+                        <div class="page_title" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1541478941291&amp;di=e682622dcfd38039dbc69256af6247d1&amp;imgtype=0&amp;src=http%3A%2F%2Fvip.wy-kc.com%2Fupload%2F367%2Fadmin%2F20180815%2F5c870cd8e91ef3d893dd77f2bfe7e621.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> Linux学习笔记 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2018-11-05</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                <a class="post_category-link" href="/categories/Linux/">Linux</a></a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
             
-    <!-- 使用 valine -->
-<div id="comment">
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#comment' ,
-        notify: true,
-        verify: false,
-        app_id: 'your appId',
-        app_key: 'your appkey',
-        placeholder: 'Please leave your footprints',
-        pageSize: '10',
-        avatar: '',
-        avatar_cdn: 'https://gravatar.loli.net/avatar/'
-    });
-</script>
-</div>
-<style>
-   #comment{
-        padding: 2pc;
-    }
-</style>
-
-
+            </div>
+        </section>
         </div>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <footer style="text-align: center; padding-top: 2em;">
+  
+</footer>
+
+        <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -187,10 +198,11 @@
             	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
         </div>
+        <!-- Copyright 版权 end -->
     </div>
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts -->
 </body>
-
-
 
  	
 </html>
