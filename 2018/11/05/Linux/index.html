@@ -145,13 +145,31 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="Linux基本命令"><a href="#Linux基本命令" class="headerlink" title="Linux基本命令"></a>Linux基本命令</h1><h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p>用于切换当前目录</p>
+                <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><p>参考文章:<br>    <a href="https://blog.csdn.net/xufei512/article/details/53321980" target="_blank" rel="noopener">Linux20个常用命令</a></p>
+<h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p>用于切换当前目录</p>
 <blockquote>
 <p>cd &emsp;    /XXXX/XXXX &emsp;&emsp;  #切换到XXXX的XXXX目录下<br>cd &emsp;   ./XXXX      &emsp;&emsp;  #切换到当前目录下的XXXX目录下，’.’代表当前目录<br>cd &emsp;   ../XXXX     &emsp;&emsp;  #切换到上一层目录下的XXXX目录下，‘..’代表上层目录<br>cd &emsp;   ..          &emsp;&emsp;  #回到上层目录</p>
 </blockquote>
 <h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p>用于列出文件和目录</p>
 <blockquote>
-<p>ls  &emsp; -a   &emsp;&emsp;   #列出所有文件，连同隐藏文件(开头为.的文件)<br>ls  &emsp; -l   &emsp;&emsp;   #列出所有文件，并显示出文件的属性权限数据<br>ls  &emsp; -R   &emsp;&emsp;   #连同子目录的内容一起列出，等于该目录下的所有文件都会显示出来</p>
+<p>ls  &emsp; -a   &emsp;&emsp;   #列出所有文件，连同隐藏文件(开头为.的文件)<br>ls  &emsp; -l   &emsp;&emsp;   #列出所有文件，并显示出文件的属性权限数据<br>ls  &emsp; -R   &emsp;&emsp;   #连同子目录的内容一起列出，等于该目录下的所有文件都会显示出来<br>ls  &emsp; -h   &emsp;&emsp;   #将文件以较易读的方式输出(kB， GB等)</p>
+</blockquote>
+<h3 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h3><p>用于分析一行的信息，当遇到所需要的信息时将改行显示出来 </p>
+<p>简单语法为  </p>
+<blockquote>
+<p>grep &emsp; [ -参数 ] &emsp; [ –color = auto ] &emsp; ‘查找字符串’ &emsp; 文件  </p>
+</blockquote>
+<p>常用参数如下  </p>
+<blockquote>
+<p>grep &emsp; -c &emsp;&emsp; #计算找到字符串的次数<br>在不使用参数的情况下查找字符串时，如果一个字符串中包含需要查找的字符串时也会被标记，如查找int则<br>printf中的int也会被标记出，但是使用-c参数计算次数时不会将其计算+1。<br>grep &emsp; -v &emsp;&emsp; #显示不包含查找字符串的行，反向查找。<br>grep &emsp; -i &emsp;&emsp; #忽略大小写查找</p>
+</blockquote>
+<p>例子:显示出XXXX文件下包含xxx的所有行并标记颜色  </p>
+<blockquote>
+<p>grep &emsp; –color = auto ‘xxx’ XXXX &emsp;&emsp; #可不加’’符号</p>
+</blockquote>
+<p>还可以和ls命令配合使用  </p>
+<blockquote>
+<p>ls &emsp; | &emsp; grep &emsp; ‘XXX’</p>
 </blockquote>
 
             </div>
