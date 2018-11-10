@@ -140,19 +140,39 @@
 
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(http://s1.51cto.com/wyfs02/M01/46/44/wKioL1PxYLqDts5dAABFTMaVr58565.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >C/C++学习笔记</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(articlePic/CCpp.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >C语言类型小结</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="C-笔记"><a href="#C-笔记" class="headerlink" title=" C++笔记 "></a><a href="#C++"> C++笔记 </a></h2><h2 id="C语言笔记"><a href="#C语言笔记" class="headerlink" title="C语言笔记"></a>C语言笔记</h2><h3 id="常用的format字符串中的格式符"><a href="#常用的format字符串中的格式符" class="headerlink" title="常用的format字符串中的格式符"></a>常用的format字符串中的格式符</h3><p>%d   &emsp; 对应参数是一个 int 类型<br>%f   &emsp; 对应参数是一个 float 类型<br>%ld  &emsp; 对应参数是一个 long int 类型<br>%lld &emsp; 对应参数是一个 long long int 类型<br>%s   &emsp; 对应参数是一个 const char* 类型<br>%u   &emsp; 对应参数是一个 unsigned int 类型<br>%zu  &emsp; 对应参数是一个 size_t 类型<br>%td  &emsp; 对应的参数是一个 ptrdiff_t 类型<br>%x   &emsp; 对应的参数是一个 int 类型，不过会以16进制输出</p>
-<h3 id="int类型小细节"><a href="#int类型小细节" class="headerlink" title="int类型小细节"></a>int类型小细节</h3><p>int 类型在64位和32位系统中均为4字节，即32位，且默认为signed类型<br>最大值为0x7FFFFFFF,最小值为0x80000000。</p>
-<h4 id="int类型对应的整数字面量可直接按照自然方式书写"><a href="#int类型对应的整数字面量可直接按照自然方式书写" class="headerlink" title="int类型对应的整数字面量可直接按照自然方式书写"></a>int类型对应的整数字面量可直接按照自然方式书写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int i = 0、 -128、 127、 +2333;//都为正常赋值</span><br></pre></td></tr></table></figure>
-<h4 id="八进制整数字面量以0打头"><a href="#八进制整数字面量以0打头" class="headerlink" title="八进制整数字面量以0打头"></a>八进制整数字面量以0打头</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int i = 01、023、-0123;//都为8进制赋值</span><br></pre></td></tr></table></figure>
-<h4 id="十六进制整数字面量以0x打头"><a href="#十六进制整数字面量以0x打头" class="headerlink" title="十六进制整数字面量以0x打头"></a>十六进制整数字面量以0x打头</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int i = 0x123、-0x0045、0xabcdef;//都为16进制赋值</span><br></pre></td></tr></table></figure>
-<h4 id="无符号类型字面量书写可在字面量后面添加U或者u-一般书中为大写"><a href="#无符号类型字面量书写可在字面量后面添加U或者u-一般书中为大写" class="headerlink" title="无符号类型字面量书写可在字面量后面添加U或者u(一般书中为大写)"></a>无符号类型字面量书写可在字面量后面添加U或者u(一般书中为大写)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unsigned int i = -128U、127U、01U;</span><br></pre></td></tr></table></figure>
-<p><strong>声明一个无符号类型字面量时int可以省略不写</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unsigned i = 1;</span><br></pre></td></tr></table></figure></p>
-<h2 id="C-笔记-1"><a href="#C-笔记-1" class="headerlink" title=" C++笔记 "></a><a name="C++"> C++笔记 </a></h2>
+                <h2 id="C语言笔记"><a href="#C语言笔记" class="headerlink" title="C语言笔记"></a>C语言笔记</h2><h3 id="常用的format字符串中的格式符"><a href="#常用的format字符串中的格式符" class="headerlink" title="常用的format字符串中的格式符"></a>常用的format字符串中的格式符</h3><p>%d   &emsp; 对应参数是一个 int 类型<br>%f   &emsp; 对应参数是一个 float 类型<br>%ld  &emsp; 对应参数是一个 long int 类型<br>%lld &emsp; 对应参数是一个 long long int 类型<br>%s   &emsp; 对应参数是一个 const char* 类型<br>%u   &emsp; 对应参数是一个 unsigned int 类型<br>%zu  &emsp; 对应参数是一个 size_t 类型<br>%td  &emsp; 对应的参数是一个 ptrdiff_t 类型<br>%x   &emsp; 对应的参数是一个 int 类型，不过会以16进制输出</p>
+<h3 id="int类型"><a href="#int类型" class="headerlink" title="int类型"></a>int类型</h3><p>&emsp; int 类型在64位和32位系统中均为4字节即32位，且默认为signed类型。<br>最大值为0x7FFFFFFF，最小值为0x80000000。</p>
+<h5 id="int类型对应的整数字面量可直接按照自然方式书写"><a href="#int类型对应的整数字面量可直接按照自然方式书写" class="headerlink" title="int类型对应的整数字面量可直接按照自然方式书写"></a>int类型对应的整数字面量可直接按照自然方式书写</h5><blockquote>
+<p>int i = 0、 -128、 127、 +2333; //都为正常赋值</p>
+</blockquote>
+<h5 id="八进制整数字面量以0打头"><a href="#八进制整数字面量以0打头" class="headerlink" title="八进制整数字面量以0打头"></a>八进制整数字面量以0打头</h5><blockquote>
+<p>int i = 01、023、-0123; //都为8进制赋值</p>
+</blockquote>
+<h5 id="十六进制整数字面量以0x打头"><a href="#十六进制整数字面量以0x打头" class="headerlink" title="十六进制整数字面量以0x打头"></a>十六进制整数字面量以0x打头</h5><blockquote>
+<p>int i = 0x123、-0x0045、0xabcdef; //都为16进制赋值</p>
+</blockquote>
+<h5 id="无符号类型字面量书写可在字面量后面添加U或者u-一般书中为大写"><a href="#无符号类型字面量书写可在字面量后面添加U或者u-一般书中为大写" class="headerlink" title="无符号类型字面量书写可在字面量后面添加U或者u(一般书中为大写)"></a>无符号类型字面量书写可在字面量后面添加U或者u(一般书中为大写)</h5><blockquote>
+<p>unsigned int i = -128U、127U、01U;<br>unsigned i = 1; //声明一个无符号类型字面量时int可以省略不写</p>
+</blockquote>
+<h3 id="short类型"><a href="#short类型" class="headerlink" title="short类型"></a>short类型</h3><p>&emsp; signed short int类型，简写为short类型，常称为短整型，在32位和64位的系统中均占用2个字节即16位。<br>最大值为0x7FFF，最小值为0x8000。<br>unsigned short int 类型最大值为0xFFFF，最小值为0x0000。<br>unsigned short和short类型没有特别的整数字面量，可直接使用int和unsigned int类型的整数字面量赋值即可。</p>
+<h3 id="long类型"><a href="#long类型" class="headerlink" title="long类型"></a>long类型</h3><p>&emsp; signed long int类型，简写为long类型，常称为长整形，在32位系统下占用4个字节即32位，但在64位系统下，根据编译器的不同，占用4个字节32位或者8个字节64位，可用<strong>sizeof(long)</strong>查看其大小。</p>
+<h5 id="定义时可以在字面量后添加L和UL"><a href="#定义时可以在字面量后添加L和UL" class="headerlink" title="定义时可以在字面量后添加L和UL"></a>定义时可以在字面量后添加L和UL</h5><blockquote>
+<p>long i = 100;<br>long i = 1000L;<br>long i = 0x10000000L; //由于0x10000000已经超过int类型字面量所能表示的最大值，所以在字面量后加上L表明该字面量是长整形<br>                     //某些编译器如果不在后面加上L，可能会出现报错，或在运算时会丢失数据<br>unsigned long i = 100000UL; //表示一个无符号长整形<br>在写程序时，由于不同的环境下long类型的类型宽度不同，我们在定义一个整数类型时尽量不要使用long类型。</p>
+</blockquote>
+<h3 id="long-long类型"><a href="#long-long类型" class="headerlink" title="long long类型"></a>long long类型</h3><p>&emsp; signed long long类型，简写为long long类型，在32位和64位操作系统下，均占用8个字节即64位。</p>
+<h5 id="定义时可以在字面量后面添加LL和ULL"><a href="#定义时可以在字面量后面添加LL和ULL" class="headerlink" title="定义时可以在字面量后面添加LL和ULL"></a>定义时可以在字面量后面添加LL和ULL</h5><blockquote>
+<p>long long i = 100;<br>long long i = 10000LL;<br>long long i = 0x100000000LL; //同理long类型<br>unsigned long long i = 100000ULL;</p>
+</blockquote>
+<h3 id="bool类型"><a href="#bool类型" class="headerlink" title="bool类型"></a>bool类型</h3><p>&emsp; _Bool类型对象只占用一个字节。</p>
+<blockquote>
+<p>bool a = true;<br>bool b = false;<br>bool c = a == b; //使用a == b的结果给C赋值，这里C为0<br>c = 10 &gt; 5; //这里C为1<br>a = 0x10000000; //这里a为1<br>b = 0.0; //这里b为0<br>c = -1; //这里c为1<br>在最后的两行代码中，对于a = 0x10000000，不是简单的对字面量进行高位截取，只取最低位的结果，而是将0x10000000 != 0的结果赋值给了a，对于b = 0.0也同样是将0.0 != 0.0的值赋值给了b，就是我们常说的非零为真。</p>
+</blockquote>
+
             </div>
 
             <!-- Post Comments -->
